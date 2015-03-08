@@ -1,0 +1,14 @@
+{
+	"main" : "index.html",
+	"name" : "SRT Editor",
+	"single-instance" : true,
+	"window": {
+	    "title": "SRT Editor",
+	    "icon": "link.png",
+	    "toolbar": false,
+	    "frame": true,
+	    "width": 800,
+	    "height": 500
+	}
+
+}
