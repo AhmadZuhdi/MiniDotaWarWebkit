@@ -2,7 +2,7 @@
 * @Author: ahmadzuhdi
 * @Date:   2015-02-11 21:27:43
 * @Last Modified by:   ahmadzuhdi
-* @Last Modified time: 2015-02-11 22:50:12
+* @Last Modified time: 2015-03-08 17:23:01
 */
 
 'use strict';
@@ -23,9 +23,7 @@ requirejs.config({
 		lodash : 'bower_components/lodash/lodash.min',
 		flight : 'bower_components/flightjs/flight',
 		jquery : 'bower_components/jquery/dist/jquery.min',
-
-		uploadSRT : 'app/controller/uploadSRT',
-
+		async : 'bower_components/async/lib/async',
 
 	},
 

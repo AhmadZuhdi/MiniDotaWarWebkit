@@ -2,7 +2,7 @@
 * @Author: ahmadzuhdi
 * @Date:   2015-03-08 12:45:09
 * @Last Modified by:   ahmadzuhdi
-* @Last Modified time: 2015-03-08 13:12:33
+* @Last Modified time: 2015-03-08 14:13:30
 */
 
 'use strict';
@@ -15,7 +15,7 @@ define([], function() {
 		 * Hero Name
 		 * @type {String}
 		 */
-		name : 'Name',
+		name : 'Abaddon',
 
 		/**
 		 * Hero Main Attributes

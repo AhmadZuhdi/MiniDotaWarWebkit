@@ -2,7 +2,7 @@
 * @Author: ahmadzuhdi
 * @Date:   2015-03-08 11:50:43
 * @Last Modified by:   ahmadzuhdi
-* @Last Modified time: 2015-03-08 13:50:19
+* @Last Modified time: 2015-03-08 14:16:41
 */
 
 'use strict';
@@ -31,8 +31,12 @@ define(['lodash', 'app/controller/dota/items.js', 'app/controller/dota/engine.js
 
 			h.attributes.attackTime = engine.generateAttackTime(h.attributes.baseAttackTime, h.attributes.agility)
 
-			console.log(h)
-
+			/**
+			 * add item to hero
+			 * @param {Number}   slot     
+			 * @param {String}   itemName 
+			 * @param {Function} callback 
+			 */
 			hero.addItem = function(slot, itemName, callback) {
 
 				items.getItem(itemName, function(err, itemObject){
@@ -84,6 +88,11 @@ define(['lodash', 'app/controller/dota/items.js', 'app/controller/dota/engine.js
 
 			}
 
+			/**
+			 * get item
+			 * @param  {Number} slot 
+			 * @return {Object}      
+			 */
 			hero.getItem = function(slot) {
 
 				if(!slot) {
@@ -93,8 +102,14 @@ define(['lodash', 'app/controller/dota/items.js', 'app/controller/dota/engine.js
 				}
 
 				return h.items[slot]
+
 			}
 
+			/**
+			 * get hero attributes
+			 * @param  {String} attributesName 
+			 * @return {Object}                
+			 */
 			hero.getAttribute = function(attributesName) {
 
 				if(attributesName) return h.attributes[attributesName]
